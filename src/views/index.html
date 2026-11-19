@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Worldcar: una selección exclusiva de vehículos deportivos y de alta gama."
+    >
+    <meta name="theme-color" content="#0C2E3D">
+    <title>Worldcar | Vehículos exclusivos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-label="Vehículos destacados">
+        <div class="carousel" aria-roledescription="carrusel">
+          <div class="carousel__slides">
+            <div class="carousel__slide is-active" aria-hidden="false">
+              <img src="../assets/images/carrusel/laferrari.jpg" alt="Ferrari LaFerrari" fetchpriority="high">
+            </div>
+            <div class="carousel__slide" aria-hidden="true">
+              <img src="../assets/images/carrusel/mcclaren.jpg" alt="McLaren deportivo" loading="lazy">
+            </div>
+            <div class="carousel__slide" aria-hidden="true">
+              <img src="../assets/images/carrusel/porsche.jpg" alt="Porsche de alta gama" loading="lazy">
+            </div>
+            <div class="carousel__slide" aria-hidden="true">
+              <img src="../assets/images/carrusel/svj.jpg" alt="Lamborghini Aventador SVJ" loading="lazy">
+            </div>
+            <div class="carousel__slide" aria-hidden="true">
+              <img src="../assets/images/carrusel/tesla.jpg" alt="Tesla de alto rendimiento" loading="lazy">
+            </div>
+            <div class="carousel__slide" aria-hidden="true">
+              <img src="../assets/images/carrusel/ford.jpg" alt="Ford deportivo" loading="lazy">
+            </div>
+            <div class="carousel__slide" aria-hidden="true">
+              <img src="../assets/images/carrusel/nissan.jpg" alt="Nissan deportivo" loading="lazy">
+            </div>
+          </div>
+          <div class="hero__shade" aria-hidden="true"></div>
+        </div>
+
+        <header class="site-header">
+          <a class="brand" href="#" aria-label="Worldcar, inicio">
+            <img src="../assets/images/ui/Logo%20worldcar.png" alt="Worldcar Exclusive Sports Cars">
+          </a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" id="primary-navigation" aria-label="Navegación principal">
+            <a href="#catalogo">Catálogo</a>
+            <a href="#sedes">Sedes</a>
+            <a href="#repuestos">Repuestos</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
+            <a class="site-nav__login" href="#login">Login <span aria-hidden="true">↗</span></a>
+          </nav>
+        </header>
+
+        <div class="hero__content">
+          <p class="eyebrow"><span></span> Worldcar · Exclusive sports cars</p>
+          <h1>La emoción<br>de lo <em>extraordinario.</em></h1>
+          <p class="hero__description">
+            Una selección excepcional para quienes viven cada kilómetro como una experiencia única.
+          </p>
+          <a class="hero__cta" href="#catalogo">
+            Explorar catálogo
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="hero__footer">
+          <p class="hero__caption"><span>01</span> / 07 <i></i> Ingeniería que despierta los sentidos</p>
+          <div class="carousel__controls" aria-label="Controles del carrusel">
+            <button class="carousel__arrow carousel__previous" type="button" aria-label="Imagen anterior">
+              <span aria-hidden="true">←</span>
+            </button>
+            <div class="carousel__dots" role="group" aria-label="Seleccionar imagen">
+              <button class="carousel__dot is-active" type="button" aria-label="Mostrar imagen 1" aria-current="true"></button>
+              <button class="carousel__dot" type="button" aria-label="Mostrar imagen 2"></button>
+              <button class="carousel__dot" type="button" aria-label="Mostrar imagen 3"></button>
+              <button class="carousel__dot" type="button" aria-label="Mostrar imagen 4"></button>
+              <button class="carousel__dot" type="button" aria-label="Mostrar imagen 5"></button>
+              <button class="carousel__dot" type="button" aria-label="Mostrar imagen 6"></button>
+              <button class="carousel__dot" type="button" aria-label="Mostrar imagen 7"></button>
+            </div>
+            <button class="carousel__arrow carousel__next" type="button" aria-label="Imagen siguiente">
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <div class="newsletter__content">
+          <p class="newsletter__eyebrow">Exclusividad en tu bandeja de entrada</p>
+          <h2 id="newsletter-title">Novedades para quienes viven <em>lo extraordinario.</em></h2>
+          <p class="newsletter__description">
+            Suscríbete para recibir información, novedades y promociones especiales de Worldcar.
+          </p>
+        </div>
+        <form class="newsletter__form" id="newsletter-form">
+          <label for="newsletter-email">Tu correo electrónico</label>
+          <div class="newsletter__input-group">
+            <input
+              id="newsletter-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="nombre@correo.com"
+              required
+            >
+            <button type="submit">Suscribirme <span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="newsletter__notice" id="newsletter-notice" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
